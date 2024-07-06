@@ -6,6 +6,7 @@
     <title>Badri Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,9 @@
         </ul>
     </div>
     <div>
-        <button>DOWNLOAD CV</button>
+       
+        <a href="./img/meenu.pdf" download class="button" target="_blank"><button class="btn">DOWNLOAD CV</button></a>
+        
     </div>
 </header>
 <!------------main content------------------>
@@ -46,7 +49,7 @@
     <!-- ---------button---------- -->
      <div class="hero-button">
         <button class="btn hire-btn">Hire me</button>
-        <button class="btn cv-btn">Download CV</button>
+        <a href="./img/meenu.pdf" target="_blank"><button class="btn cv-btn" >Download CV</button></a>
     </div>
     </div>
     &nbsp;
@@ -104,7 +107,7 @@
         <input type="text" name="name" placeholder="Full Name">
     </div>
     <div>
-        <input type="text" name="subject" placeholder="Full Name">
+        <input type="text" name="subject" placeholder="Email Id">
     </div>
     <div>
         <textarea name="description" rows="7"  placeholder="Your description here..."></textarea>
