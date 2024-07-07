@@ -14,13 +14,13 @@ html{
 /* -------------------------------header----------------------- */
 header{
     background-color: #1b1f24;
-    padding: 20px ;
+    padding-top: 20px;
     color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    width: 100%;   
+    width: 100%;
 }
 .logo{
     color: #b15dff;
@@ -115,17 +115,20 @@ ul.social-icon {
 .btn.hire-btn{
     background-color: #b15dff;
     font-weight: bold;
+    border-radius: 5px;
 }
 .btn.hire-btn:hover{
-    background-color: #89bdd1;
+    background-color: #c48afa;
 }
 .btn.cv-btn{
     color: #b15dff;
+    border-radius: 5px;
     background-color: #1b1f24;
     border: 1px solid #b15dff;
 }
 .btn.cv-btn:hover{
- background-color: #3d4753 ;
+ background-color: #b15dff ;
+ color: #000;
 }
 
 /* -------------------------about section---------------- */
@@ -258,12 +261,14 @@ footer{
 }
 /* -------------------------media queries------------------------ */
 @media screen and (max-width: 600px) {
+  
     header{
         flex-direction: column;
-        
+        position: absolute;
+        padding-top: 10px ;
+        padding-bottom: 10px;
     }
     header> *{
-        justify-content: center;
         margin-bottom: 10px;
     }
     header button{
@@ -273,11 +278,11 @@ footer{
     section.hero-img{
         flex-direction: column;
         padding-top: 80px;
+
     }
     .hero-img img{
         width: 500px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-bottom: 15px;
     }
     /* about-section */
     section.about-section{
