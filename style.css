@@ -180,8 +180,8 @@ ul.social-icon {
     color: #b15dff;
 }
 .btn.knowmore-btn:hover{
-    background-color: #22282f;
-    color: #ccc9c9;
+    background-color: #2b3138;
+   
 }
 #know-more-button{
     white-space: normal;
@@ -328,6 +328,14 @@ footer{
     }
     .about-section-desc ul li{
         font-size: 13px;
+    }
+    #know-more-button{
+        white-space: normal;
+        text-wrap: stable;
+        padding-top: 8px;
+        overflow: hidden;
+        text-align: justify;
+        font-size: 13.5px ;
     }
     /* work-section */
     
