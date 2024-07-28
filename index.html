@@ -27,7 +27,7 @@
 
     </div>
 </header>
-<!------------main content------------------>
+<!----------------------------main content------------------>
 <section class="hero-img">
     <div>
         <img src="./img/mainimg.png" alt="Badri Portfolio" >
@@ -43,19 +43,18 @@
         
         <!-- <div>social icons</div> -->
     <ul class="social-icon">
-        <li><a href="http://linkedin.com/in/badri-vishalakshi-934455259" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/badri-vishalakshi-s-934455259" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
         <li><a href="mailto:badrivishalakshi5@gmail.com" ><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="tel:+919514349799" ><i class="fa-solid fa-square-phone"></i></a></li>
     </ul>
         
     <!-- ---------button---------- -->
      <div class="hero-button">
-        <button class="btn hire-btn">Hire me</button>
+        
         <a href="./img/meenu.pdf" target="_blank"><button class="btn cv-btn" >Download CV</button></a>
     </div>
     </div>
     &nbsp;
-    
-    
 </section>
 <!-- --------------------------------------about----------------------- -->
 <section class="about-section" id="about-section">
@@ -77,10 +76,14 @@
         </ul>
     <!-------info button----  -->
      
-        <button class="btn hire-btn">
+        <button  class="btn knowmore-btn">
             <details> 
-                <summary>know more</summary>
-                <p></p>
+                <summary >know more</summary>
+                <div id="know-more-button">
+                <p>2022 - Thiagarajar college- BCom  - 8.63 CGPA</p><br>
+                <p>2019 - St.Joseph Girls HSC School - 91%</p><br>
+                <p>2017 - Amrita Vidyalayam School   - 93%</p><br>
+            </div>
             </details>
         </button>
 
@@ -110,18 +113,27 @@
 <!-- ----------------------------------contact section-------------- -->
 <section class="contact-section" id="contact-section">
     <h4>Contact <span class="contact-section-head">Me</span></h4>
-<form >
+<form action="https://api.web3forms.com/submit" method="POST" id="form">
     <div>
-        <input type="text" name="name" placeholder="Full Name">
+        <input type="hidden" name="access_key" value="49c87461-354b-4b4c-9b00-31679f43ff3c">
+
+        <input type="text" name="name" placeholder="Full Name" id="fullname" required >
+        
     </div>
     <div>
-        <input type="text" name="subject" placeholder="Email Id">
+        <input type="text" name="subject" placeholder="Email Id" id="email" required>
+       
     </div>
     <div>
-        <textarea name="description" rows="7"  placeholder="Your description here..."></textarea>
+        <textarea name="description" rows="7"  placeholder="Your description here..." id="desc" required></textarea>
+        
     </div>
     <div>
-        <button class="btn hire-btn">Text Me</button>
+        <button type="submit" class="btn knowmore-btn">Reach Me</button>
+    </div><br>
+    <div >
+       <a href="mailto:badrivishalakshi5@gmail.com" class="footer-icon"><span class="footer-style">Email:</span> badrivishalakshi5@gmail.com </a>
+       <a href="tel: +919514349799" class="footer-icon"><span class="footer-style">Phone:</span> +919514349799</a>
     </div>
 </form>
 </section>
@@ -129,4 +141,5 @@
     <h6>copyright &copy; -Badri Vishalakshi-All Rights Reserved </h6>
 </footer>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>

@@ -112,23 +112,17 @@ ul.social-icon {
     border: none;
     border-radius: 3px;
 }
-.btn.hire-btn{
-    background-color: #b15dff;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.btn.hire-btn:hover{
-    background-color: #c48afa;
-}
+
 .btn.cv-btn{
-    color: #b15dff;
+    color: #000;
     border-radius: 5px;
-    background-color: #1b1f24;
+    background-color: #b15dff;
+    font-weight: 600;
     border: 1px solid #b15dff;
 }
 .btn.cv-btn:hover{
- background-color: #b15dff ;
- color: #000;
+ background-color: #1b1f24 ;
+ color: #b15dff;
 }
 
 /* -------------------------about section---------------- */
@@ -175,7 +169,30 @@ ul.social-icon {
 .about-section-desc li>a:hover{
     color: #b15dff;
 }
-/* ----------------work section----------------- */
+
+
+/* --------about button------ */
+.btn.knowmore-btn{
+    background-color: #22282f;
+    font-weight: 600;
+    border: 1px solid #b15dff;
+    border-radius: 5px;
+    color: #b15dff;
+}
+.btn.knowmore-btn:hover{
+    background-color: #22282f;
+    color: #ccc9c9;
+}
+#know-more-button{
+    white-space: normal;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    padding-top: 8px;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 15px ;
+}
+/* --------------------------------work section--------------------------- */
 .work-section{
     background-color: #1b1f24;
     color: #fff;
@@ -253,11 +270,23 @@ ul.social-icon {
     margin-bottom: 18px;
 }
 /* -----------------footer---------------------- */
+.footer-icon{
+    font-size: 11px;
+    color: #bc75fd;
+    text-decoration: none;
+    padding: 10px;
+}
+.footer-icon:hover{
+    color: #ccc9c9;
+}
+.footer-style{
+    color: #ccc9c9;
+}
 footer{
     background-color: #1b1f24;
     padding: 10px;
     text-align: center;
-    color: #505151;
+    color: #3f4040;
 }
 /* -------------------------media queries------------------------ */
 @media screen and (max-width: 600px) {
@@ -315,5 +344,8 @@ footer{
     .contact-section form input,textarea{
         flex-direction: column;
         width: 100%;
+    }
+    .footer-icon{
+        padding: 5px;
     }
 }
